@@ -1,3 +1,9 @@
+:root {
+    ---heading-background-color: #5B425C;
+    ---font-color: #352636;
+    ---background-nav-color: #D8C3DE
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +20,7 @@ body {
 }
 
 nav {
-    background-color: steelblue;
+    background-color: var(---heading-background-color);
     padding: 10px;
 }
 
@@ -25,7 +31,7 @@ nav a {
 }
 
 h1 {
-    color: darkblue;
+    color: var(---font-color);
     padding: 0.5rem;
 }
 
@@ -49,7 +55,7 @@ aside {
     margin: auto;
     border: 1px solid rgb(0 0 0 / 0.2);
     padding: 5%;
-    background-color: #D8C3DE;
+    background-color: var(---background-nav-color);
     color: black;
     text-align: center;
     position: relative;
