@@ -75,7 +75,6 @@ nav {
 
 .hero {
     position: relative;
-
 }
 
 .hero img {
@@ -101,7 +100,7 @@ h1 {
     bottom: 20px;
     left: 50%;
     text-align: left;
-    padding: 15px;
+    padding: 12px;
     opacity: 0.9;
     background-color: var(--accent1-color);
     font-size: 13px;
@@ -113,7 +112,7 @@ h1 {
     width: 100px;
     box-shadow: 0 0 30px #666;
     border: 1px solid black;
-    margin: 8px;
+    margin: 20px;
 }
 
 section {
@@ -128,7 +127,7 @@ section {
 h2 {
     font-size: 1.5rem;
     background-color: var(--accent1-color);
-    padding: 16px;
+    padding: 5px;
     text-align: center;
     color: #fff;
     margin: 0 0;
