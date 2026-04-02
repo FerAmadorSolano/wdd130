@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table Exercise</title>
     <link rel="stylesheet" href="styles/poll-form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet">
 </head>
 
 <body>
@@ -14,31 +19,52 @@
     </header>
     <main>
         <form>
-            <label for="username">Full Name:</label>
-            <input type="text" id="username" name="username" required>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <div class="form-item column2">
+                    <label for="username">Full Name:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
 
-            <label for="useremail">Email Address:</label>
-            <input type="email" id="useremail" name="useremail" required>
+                <div class="form-item column2">
+                    <label for="useremail">Email Address:</label>
+                    <input type="email" id="useremail" name="useremail" required>
+                </div>
+            </fieldset>
 
-            <label for="browser">What is your favorite browser?</label>
-            <select name="browser" id="browser">
-                <option value="1">Chrome</option>
-                <option value="2">Safari</option>
-                <option value="3">Edge</option>
-                <option value="4">Brave</option>
-                <option value="5">Other</option>
-            </select>
+            <fieldset>
+                <legend>Questions</legend>
+                <div class="form-item column1">
+                    <label for="browser">What is your favorite browser?</label>
+                    <select name="browser" id="browser">
+                        <option value="1">Chrome</option>
+                        <option value="2">Safari</option>
+                        <option value="3">Edge</option>
+                        <option value="4">Brave</option>
+                        <option value="5">Other</option>
+                    </select>
+                </div>
 
-            <label for="pet">Do you have a household pet?</label>
-            <input type="checkbox" id="pet" name="pet">
+                <div class="form-item column1">
+                    <label for="pet">Do you have a household pet?</label>
+                    <input type="checkbox" id="pet" name="pet">
+                </div>
 
-            <label for="feedback">List the places you have lived.</label>
-            <textarea id="feedback" name="feedback" rows="4"
-              placeholder="Stillwater Florida, Amsterdam Netherlands, Timbuktu Mali"></textarea>
+                <div class="form-item">
+                    <label for="feedback">List the places you have lived:</label>
+                    <textarea id="feedback" name="feedback" rows="4"
+                      placeholder="Stillwater Florida, Amsterdam Netherlands, Timbuktu Mali"></textarea>
+                </div>
+            </fieldset>
 
             <button type="submit">Submit Poll</button>
         </form>
     </main>
+
+    <footer>
+        <p>©️2026 | HTML Form - User Poll Activity | Fernanda Amador </p>
+    </footer>
+    </footer>
 </body>
 
 </html>
