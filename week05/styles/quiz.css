@@ -11,6 +11,12 @@ body {
     background: #fff;
 }
 
+main {
+    max-width: 500px;
+    background-color: #555;
+    color: #fff;
+}
+
 header {
     margin: 0 auto;
     width: 650px;
@@ -19,7 +25,26 @@ header {
 h1 {
     margin: 1rem;
     font-size: 1.9rem;
-    color: navy;
+    color: #fff;
+    text-align: center;
+}
+
+form {
+    background-color: #ddd;
+    color: #111;
+}
+
+input,
+textarea,
+select {
+    padding: .75rem;
+    min-width: 350px;
+}
+
+code {
+    display: block;
+    background-color: #000;
+    color: #fff;
     text-align: center;
 }
 
@@ -30,4 +55,15 @@ footer {
     font-size: 0.8em;
     color: #777;
     border-top: 1px solid #ccc;
+}
+
+.box {
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+    padding: 1rem;
+}
+
+.quiz-item {
+    border: none;
+
 }

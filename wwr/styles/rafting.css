@@ -2,6 +2,7 @@
     --primary-color: #476B52;
     --accent1-color: #264653;
     --body-font: Arial, Helvetica, sans-serif;
+    --heading-font: "Times New Roman", Georgia, serif;
     /*--background-header-color: #A3A3A3;*/
 }
 
@@ -41,8 +42,9 @@ body {
 header,
 main,
 footer {
-    width: 840px;
+    max-width: 900px;
     margin: 0 auto;
+    padding: 20px;
 }
 
 h1,
@@ -80,7 +82,7 @@ nav {
     height: auto;
 }
 
-h1 {
+.hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
@@ -92,12 +94,12 @@ h1 {
 }
 
 .hero article {
-    max-width: 600px;
+    max-width: 400px;
     position: absolute;
-    bottom: 20px;
+    bottom: 1px;
     left: 50%;
     text-align: left;
-    padding: 12px;
+    padding: 2px;
     opacity: 0.9;
     background-color: var(--accent1-color);
     font-size: 13px;
@@ -109,11 +111,11 @@ h1 {
     width: 100px;
     box-shadow: 0 0 30px #666;
     border: 1px solid black;
-    margin: 20px;
+    margin: 2px 10px;
 }
 
 section {
-    max-width: 800px;
+    max-width: 900px;
     margin: 1rem auto;
 }
 
@@ -124,7 +126,7 @@ section {
 h2 {
     font-size: 1.5rem;
     background-color: var(--accent1-color);
-    padding: 5px;
+    padding: 7px;
     text-align: center;
     color: #fff;
     margin: 0 0;
@@ -153,6 +155,89 @@ h2 {
 
 .gallery figure {
     text-align: center;
+}
+
+.company-info {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.company-info h2 {
+    margin-bottom: 10px;
+}
+
+.company-info p {
+    margin: 2px 0;
+    padding: 2px;
+}
+
+.second-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.map iframe {
+    width: 100%;
+    height: 450px;
+    margin: 10px 0;
+}
+
+.form-user form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.form-user p {
+    margin: 0 0;
+}
+
+input,
+textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+.form-user label {
+    font-size: 0.9rem;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #ccc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.employees {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.columns {
+    grid-column: span 3;
+    margin: .25rem;
+}
+
+.employees img {
+    width: 120px;
+    margin: 10px 0;
+}
+
+figcaption {
+    font-size: 0.9rem;
 }
 
 footer {
